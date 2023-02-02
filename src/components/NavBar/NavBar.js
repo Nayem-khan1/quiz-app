@@ -27,7 +27,7 @@ const NavBar = () => {
             <NavLink to={"/"}>Home</NavLink>
           </li>
           <li className="md:mr-16 text-gray-500 text-xl hover:text-gray-900">
-            <NavLink to={"/quiz"}>Quiz</NavLink>
+            <NavLink to={""}>Quiz</NavLink>
           </li>
           <li className="md:mr-16 text-gray-500 text-xl hover:text-gray-900">
             <NavLink to={"/statistics"}>Statistics</NavLink>

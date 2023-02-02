@@ -6,7 +6,6 @@ import QuizTopic from "../QuizTopic/QuizTopic";
 
 const Home = () => {
   const { data } = useLoaderData();
-  console.log(data);
   return (
     <div>
       <div className="max-w-[1640px] mx-auto p-4 ">
