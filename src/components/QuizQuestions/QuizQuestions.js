@@ -54,7 +54,10 @@ const QuizQuestions = ({ questionData }) => {
                 name="quiz"
                 id={options[0]}
               />
-              <label className="ml-2 text-gray-700" htmlFor={options[0]}>
+              <label
+                className="ml-2 text-gray-700 text-justify"
+                htmlFor={options[0]}
+              >
                 <p>{options[0]}</p>
               </label>
             </div>
@@ -68,7 +71,10 @@ const QuizQuestions = ({ questionData }) => {
                 value={options[1]}
                 id={options[1]}
               />
-              <label className="ml-2 text-gray-700" htmlFor={options[1]}>
+              <label
+                className="ml-2 text-gray-700 text-justify"
+                htmlFor={options[1]}
+              >
                 {options[1]}
               </label>
             </div>
@@ -82,7 +88,10 @@ const QuizQuestions = ({ questionData }) => {
                 value={options[2]}
                 id={options[2]}
               />
-              <label className="ml-2 text-gray-700" htmlFor={options[2]}>
+              <label
+                className="ml-2 text-gray-700 text-justify"
+                htmlFor={options[2]}
+              >
                 {options[2]}
               </label>
             </div>
@@ -96,7 +105,10 @@ const QuizQuestions = ({ questionData }) => {
                 value={options[3]}
                 id={options[3]}
               />
-              <label className="ml-2 text-gray-700" htmlFor={options[3]}>
+              <label
+                className="ml-2 text-gray-700 text-justify"
+                htmlFor={options[3]}
+              >
                 {options[3]}
               </label>
             </div>

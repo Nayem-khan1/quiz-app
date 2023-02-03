@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Statistics from "./components/Statistics/Statistics";
 import Quiz from "./components/Quiz/Quiz";
 import Blog from "./components/Blog/Blog";
+import Error from "./components/Error/Error";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,6 +41,10 @@ function App() {
           element: <Blog></Blog>,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <Error></Error>,
     },
   ]);
   return (
