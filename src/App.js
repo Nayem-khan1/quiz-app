@@ -6,6 +6,7 @@ import Statistics from "./components/Statistics/Statistics";
 import Quiz from "./components/Quiz/Quiz";
 import Blog from "./components/Blog/Blog";
 import Error from "./components/Error/Error";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const router = createBrowserRouter([
@@ -50,6 +51,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <ToastContainer />
     </div>
   );
 }
