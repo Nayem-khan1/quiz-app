@@ -6,6 +6,26 @@ const Blog = () => {
       <div className="max-w-[1640px] mx-auto p-4">
         <div className="bg-gray-200 p-12 rounded-lg">
           <h1 className="text-center text-3xl mb-6">What is React.js?</h1>
+          <p className="text-justify">
+            The React.js framework is an open-source JavaScript framework and
+            library developed by Facebook. It's used for building interactive
+            user interfaces and web applications quickly and efficiently with
+            significantly less code than you would with vanilla JavaScript. In
+            React, you develop your applications by creating reusable components
+            that you can think of as independent Lego blocks. These components
+            are individual pieces of a final interface, which, when assembled,
+            form the application's entire user interface. React's primary role
+            in an application is to handle the view layer of that application
+            just like the V in a model-view-controller (MVC) pattern by
+            providing the best and most efficient rendering execution. Rather
+            than dealing with the whole user interface as a single unit,
+            React.js encourages developers to separate these complex UIs into
+            individual reusable components that form the building blocks of the
+            whole UI. In doing so, the ReactJS framework combines the speed and
+            efficiency of JavaScript with a more efficient method of
+            manipulating the DOM to render web pages faster and create highly
+            dynamic and responsive web applications.
+          </p>
         </div>
         <div className="bg-gray-200 p-12 rounded-lg mt-10">
           <h1 className="text-center text-3xl mb-6">WHAT IS CONTEXT API?</h1>
@@ -14,7 +34,7 @@ const Blog = () => {
             related to state management, for example, props drilling. Many
             solutions can solve state management issues and props drilling, but
             they may increase your build size and compromise your app
-            performance. Context API is a React built-in feature, so we don’t
+            performance. Context API is a React built-in feature, so we don't
             have to worry about performance overhead and library installing
             issues. The props drilling problem occurs when you pass a prop
             somewhere down the tree. When a project grows, data passing through
