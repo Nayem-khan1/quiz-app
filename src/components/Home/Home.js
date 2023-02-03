@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import img from "../../images/20544.jpg";
+import img from "../../images/home.jpg";
 import { useLoaderData } from "react-router-dom";
 import QuizTopic from "../QuizTopic/QuizTopic";
 
@@ -28,7 +28,7 @@ const Home = () => {
         </div>
         <div className="background ml-44"></div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-[1640px] mx-auto p-4 ">
         {data.map((quizTopic) => (
           <QuizTopic key={quizTopic.id} quizTopic={quizTopic}></QuizTopic>
         ))}

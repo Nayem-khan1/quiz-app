@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logoq.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import "./NavBar.css";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -24,10 +25,15 @@ const NavBar = () => {
           }`}
         >
           <li className="md:mr-16 text-gray-500 text-xl hover:text-gray-900">
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : undefined)}
+              to={"/"}
+            >
+              Home
+            </NavLink>
           </li>
           <li className="md:mr-16 text-gray-500 text-xl hover:text-gray-900">
-            <NavLink to={""}>Quiz</NavLink>
+            <NavLink to={"/quiz/1"}>Quiz</NavLink>
           </li>
           <li className="md:mr-16 text-gray-500 text-xl hover:text-gray-900">
             <NavLink to={"/statistics"}>Statistics</NavLink>
